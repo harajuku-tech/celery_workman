@@ -1,0 +1,3 @@
+Sphinx
+django
+django-celery
