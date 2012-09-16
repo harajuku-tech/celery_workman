@@ -1,6 +1,7 @@
 *.pyc
 *.pyo
 *.swp
+*.sqlite3
 .egg-info
 docs/build/
 build
