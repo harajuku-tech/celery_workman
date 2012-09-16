@@ -14,6 +14,7 @@ if __name__ == '__main__':
         sys.stderr.write('you need path of your django application')
         sys.exit(1) 
 
+    sys.argv[1] = os.path.abspath( sys.argv[1]  )
     sys.path.append(os.path.dirname(sys.argv[1]))    #: Important
     sys.path.append(sys.argv[1])    #: Important
 
@@ -30,6 +31,6 @@ if __name__ == '__main__':
     import workers
     
     if __name__ == "__main__":
-        sys.argv = workers.configure(sys.argv) # 
+        sys.argv = [ os.path.abspath(sys.argv[0])] + workers.configure(*sys.argv) 
         print "celery workman",sys.argv
         execute_manager(settings)
