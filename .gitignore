@@ -1,7 +1,8 @@
-\.pyc
-\.pyo
-\.swp
+*.pyc
+*.pyo
+*.swp
 .egg-info
 docs/build/
 build
 dist
+celery_workman.egg-info
