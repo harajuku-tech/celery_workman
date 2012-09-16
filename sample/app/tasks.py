@@ -4,4 +4,4 @@ from celery.task import task
 @task               # tasknize
 def hello(msg):
     ''' hello '''
-    open("/tmp/msg.txt","a").write(msg)
+    open("/tmp/hello.txt","a").write(msg)
