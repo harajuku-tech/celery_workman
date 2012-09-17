@@ -32,5 +32,4 @@ if __name__ == '__main__':
     
     if __name__ == "__main__":
         sys.argv = [ os.path.abspath(sys.argv[0])] + workers.configure(*sys.argv) 
-        print "celery workman",sys.argv
         execute_manager(settings)

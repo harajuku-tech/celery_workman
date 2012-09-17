@@ -3,6 +3,9 @@ import sys
 #
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "app.settings")
 
+import settings
+print settings.DATABASES
+
 APP_DIR=os.path.dirname(__file__)
 LOG_FILE="/tmp/hello.log"  #: celery worker logfile 
 PID_FILE="/tmp/hello.pid"  #: celery worker PID file
