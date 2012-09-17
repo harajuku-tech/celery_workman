@@ -92,5 +92,5 @@ Workers.py
 --------------------------------
 
 - configure() return list of celery management command
-- check  sample/app/workers.py
+- check  `sample/app/workers.py <https://github.com/harajuku-tech/celery_workman/blob/master/sample/app/workers.py>`_
 
